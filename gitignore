@@ -1,0 +1,29 @@
+# Python virtual environment and caches
+/.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Portable tools folders at the project root (not part of the project)
+/bin/
+/node/
+
+# Frontend (Vite / Node): rebuilt with npm install / npm run build
+node_modules/
+/frontend/dist/
+*.log
+
+# Big raw data (CEEW CSVs from Kaggle, 328 MB). sample_data/ is kept on purpose
+/data/
+*.csv
+!/sample_data/*.csv
+
+# Secrets
+.env
+.env.*
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
